@@ -1,5 +1,3 @@
-# How-to-OAuth2
-
 # How to generate token?
 
 1. Open PostMan, enter url = http://localhost:9999/oauth/token , select POST.
@@ -20,3 +18,10 @@
     "scope": "openid",
     "jti": "788a200c-5304-447d-9707-0dce2f580cd3"
 }
+
+
+# How to consume microservice by passing token?
+
+1. curl -X GET --header 'Accept: application/json' --header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0OTg3NjA3NDgsInVzZXJfbmFtZSI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiJdLCJqdGkiOiI3ODhhMjAwYy01MzA0LTQ0N2QtOTcwNy0wZGNlMmY1ODBjZDMiLCJjbGllbnRfaWQiOiJ3ZWJfYXBwIiwic2NvcGUiOlsib3BlbmlkIl19.HTavY-lrPXXOV0UrB_bJ0_490Hd6JoYtfJSgjRzHnepnUf_oRQqYZ84s-Ao6-NSGrMOnkZ4Wn2FxlqRhgGKW_TiCMJYKQEL84hPCXPWVVp9BRJn1eNFGWSP88ehubFO7BBjVFyDxwWDAtW13i6g_2qCza8M3WQadDxDVM-Be8Ko2amsx9y_Q0zzZjd15XgYp2nlNA_hzGjMhe8kNh2A7FGIAPP6wdzz867GxjGRS8SiZ3u8GqWrCEpcF-LbML3SPjIsgLQ0TgbLopy2EzHAIwGdjyuY3TLyrVILZlIOoEXvXdB88e2JpRXC3PRVepfpMxvPTbta_Ja_LxiV6x30anw' 'http://localhost:8080/play-microservice/api/test'
+
+2. Response display properly: Welcome to Play Rest Service.
